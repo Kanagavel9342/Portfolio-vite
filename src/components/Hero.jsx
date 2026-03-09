@@ -146,7 +146,7 @@ export default function Hero() {
               className="flex items-center justify-center lg:justify-start gap-2 sm:gap-4"
             >
               {[
-                { icon: Github, href: 'https://github.com/', label: 'GitHub' },
+                { icon: Github, href: 'https://github.com/Kanagavel9342/', label: 'GitHub' },
                 { icon: Linkedin, href: 'https://linkedin.com/', label: 'LinkedIn' },
                 { icon: Mail, href: 'mailto:kanagavel9342@gmail.com', label: 'Email' },
               ].map(({ icon: Icon, href, label }) => (
@@ -188,20 +188,17 @@ export default function Hero() {
               />
               
               {/* Image frame */}
-              <div className="absolute inset-4 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-600 p-1">
-                <div className="w-full h-full rounded-2xl bg-white dark:bg-gray-900 overflow-hidden">
-                  {/* Placeholder for actual image */}
-                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-yellow-100 to-yellow-200 dark:from-yellow-900/30 dark:to-yellow-800/30">
-                    <svg 
-                      className="w-24 h-24 sm:w-32 sm:h-32 text-yellow-500/50" 
-                      fill="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
+             {/* Image frame */}
+<div className="absolute inset-4 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-600 p-1">
+  <div className="w-full h-full rounded-2xl bg-white dark:bg-gray-900 overflow-hidden">
+    {/* Replace this entire div with img tag */}
+    <img 
+      src="src/styles/profile-pic.png" 
+      alt="Kanagavel"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
 
               {/* Floating elements around image */}
               <motion.div
