@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail, ArrowDown, Download, ExternalLink } from 'lucide-react'
+import profilePic from '../styles/profile-pic.png';
+
+
 
 const floatingVariants = {
   animate: {
@@ -193,7 +196,7 @@ export default function Hero() {
   <div className="w-full h-full rounded-2xl bg-white dark:bg-gray-900 overflow-hidden">
     {/* Replace this entire div with img tag */}
     <img 
-      src="/src/styles/profile-pic.png" 
+      src={profilePic} 
       alt="Kanagavel"
       className="w-full h-full object-cover"
     />
