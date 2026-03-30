@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from '../hooks/useInView'
-import { Send, CheckCircle, Mail, MapPin, Clock, Loader } from 'lucide-react'
+import { Send, CheckCircle, Mail, MapPin, Clock, Loader , } from 'lucide-react'
+import { FaWhatsapp } from "react-icons/fa"
 
 export default function Contact() {
   const { ref, inView } = useInView(0.1)
@@ -98,9 +99,11 @@ export default function Contact() {
             {/* Contact Info Cards - Responsive grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 sm:gap-6">
               {[
-                { icon: Mail, label: 'Email', value: 'kanagavel@email.com', href: 'mailto:kanagavel@email.com' },
-                { icon: MapPin, label: 'Location', value: 'Tamil Nadu, India', href: null },
+                { icon: Mail, label: 'Email', value: 'kanagavel9342@gmail.com', href: 'mailto:kanagavel9342@gmail.com' },
+                { icon: MapPin, label: 'Location', value: 'Madurai, Tamil Nadu, India', href: null },
                 { icon: Clock, label: 'Response Time', value: 'Within 24 hours', href: null },
+                {  icon: FaWhatsapp,  label: 'WhatsApp',  value: '+91 9342120634',  href: 'https://wa.me/919342120634?text=Hello%20Kanagavel,%20I%20want%20to%20discuss%20a%20project"' },
+
               ].map(({ icon: Icon, label, value, href }) => (
                 <motion.div
                   key={label}

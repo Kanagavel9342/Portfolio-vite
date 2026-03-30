@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail, ArrowUp, Heart } from 'lucide-react'
 const socials = [
   { icon: Github, href: 'https://github.com/', label: 'GitHub' },
   { icon: Linkedin, href: 'https://linkedin.com/', label: 'LinkedIn' },
-  { icon: Mail, href: 'mailto:kanagavel@email.com', label: 'Email' },
+  { icon: Mail, href: 'mailto:kanagavel9342@gmail.com', label: 'Email' },
 ]
 
 const navLinks = [
@@ -99,7 +99,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-white/5">
           <p className="font-body text-xs text-white/30 flex items-center gap-1">
-            © {new Date().getFullYear()} Kanagavel S. Made with <Heart size={10} className="text-yellow-400 fill-yellow-400" /> in Tamil Nadu
+            © {new Date().getFullYear()} All Rights Reserved By Kanagavel S <Heart size={10} className="text-yellow-400 fill-yellow-400" /> in Madurai
           </p>
           <div className="flex items-center gap-4">
             <span className="font-mono text-xs text-white/20">v1.0.0</span>

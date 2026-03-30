@@ -126,26 +126,40 @@ export default function About() {
             </div>
 
             {/* Highlight cards - responsive grid */}
-            <div className="grid grid-cols-2 gap-3 sm:gap-4">
-              {highlights.map(({ icon: Icon, label, desc }, i) => (
-                <motion.div
-                  key={label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={inView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
-                  whileHover={{ y: -4, scale: 1.02 }}
-                  className="p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-black/10 dark:border-white/10 hover:border-yellow-400/60 bg-white dark:bg-white/2 shadow-sm hover:shadow-md hover:shadow-yellow-400/10 transition-all cursor-default"
-                >
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-yellow-400/15 flex items-center justify-center mb-2 sm:mb-3">
-                    <Icon size={14} className="sm:size-16 md:size-18 text-yellow-600 dark:text-yellow-400" />
-                  </div>
-                  <div className="font-display text-xs sm:text-sm font-bold dark:text-white mb-0.5 sm:mb-1">{label}</div>
-                  <div className="font-body text-[8px] sm:text-xs text-black/50 dark:text-white/50 leading-tight sm:leading-normal">
-                    {desc}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+            {/* Highlight cards - responsive grid */}
+<div className="grid grid-cols-2 gap-3 sm:gap-4">
+  {highlights.map(({ icon: Icon, label, desc }, i) => (
+    <motion.div
+      key={label}
+      initial={{ opacity: 0, y: 20 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
+      whileHover={{ y: -6, scale: 1.03 }}
+      className="p-3 sm:p-4 rounded-xl sm:rounded-2xl 
+      border border-black/10 dark:border-white/10 
+      bg-white dark:bg-zinc-900 
+      hover:border-yellow-400/60 
+      shadow-sm hover:shadow-md hover:shadow-yellow-400/20 
+      transition-all cursor-default"
+    >
+      {/* Icon */}
+      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl 
+      bg-yellow-400/15 flex items-center justify-center mb-2 sm:mb-3">
+        <Icon size={14} className="sm:size-16 md:size-18 text-yellow-600 dark:text-yellow-400" />
+      </div>
+
+      {/* Title */}
+      <div className="font-display text-xs sm:text-sm font-bold text-black dark:text-white mb-0.5 sm:mb-1">
+        {label}
+      </div>
+
+      {/* Description */}
+      <div className="font-body text-[8px] sm:text-xs text-black/60 dark:text-white/50 leading-tight sm:leading-normal">
+        {desc}
+      </div>
+    </motion.div>
+  ))}
+</div>
 
             {/* CTA Button */}
             <motion.button
