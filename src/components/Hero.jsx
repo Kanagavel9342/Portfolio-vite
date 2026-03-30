@@ -193,7 +193,7 @@ export default function Hero() {
   <div className="w-full h-full rounded-2xl bg-white dark:bg-gray-900 overflow-hidden">
     {/* Replace this entire div with img tag */}
     <img 
-      src="src/styles/profile-pic.png" 
+      src="/src/styles/profile-pic.png" 
       alt="Kanagavel"
       className="w-full h-full object-cover"
     />

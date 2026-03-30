@@ -9,7 +9,7 @@ const projects = [
     description: 'A modern car rental booking website with responsive UI.',
     tech: ['React', 'MySQL'],
     icon: Globe,
-    image: '/src/assets/P1.png',
+    image: 'src/assets/P1.png',
     accentColor: '#F59E0B',
     github: '#',
     live: 'https://www.sreeganapathycaabs.com/',
